@@ -42,6 +42,7 @@ VALUES (:orderId,:orderName,:orderStatus)]]></db:sql>
 			</batch:process-records>
 			<batch:on-complete >
 				<ee:transform doc:name="Transform Message" doc:id="8ce870da-a6f6-4b65-806b-4300171cd2f4" >
+			<logger level="INFO" doc:name="Logger" doc:id="828aab2f-1187-4ea5-814c-b0aabd54d064" message="helo world" />
 					<ee:message >
 						<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
