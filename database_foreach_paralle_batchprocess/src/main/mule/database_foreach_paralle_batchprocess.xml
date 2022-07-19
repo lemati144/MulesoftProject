@@ -49,6 +49,7 @@ output application/json
 payload]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
+				<logger level="INFO" doc:name="Logger" doc:id="881f61c3-4b0b-42b5-9f8e-81d177ff4e45" message="welcome to mulesoft"/>
 			</batch:on-complete>
 		</batch:job>
 	</flow>
